@@ -3,7 +3,7 @@
 require 'net/http'
 
 class ParseHubRunner
-  RUN_URL = "https://www.parsehub.com/api/v2/projects/#{ENV['PROJECT_TOKEN']}/run"
+  RUN_URL = "https://www.parsehub.com/api/v2/projects/#{ENV['PROJECT_TOKEN']}/run".freeze
 
   def self.run
     params = {

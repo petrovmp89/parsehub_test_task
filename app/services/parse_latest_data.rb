@@ -3,7 +3,7 @@
 require 'net/http'
 
 class ParseLatestData
-  LATEST_URL = "https://www.parsehub.com/api/v2/projects/#{ENV['PROJECT_TOKEN']}/last_ready_run/data?api_key=#{ENV['API_KEY']}"
+  LATEST_URL = "https://www.parsehub.com/api/v2/projects/#{ENV['PROJECT_TOKEN']}/last_ready_run/data?api_key=#{ENV['API_KEY']}".freeze
 
   def self.fetch_latest_data
     new.run
