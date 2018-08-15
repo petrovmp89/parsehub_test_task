@@ -1,0 +1,17 @@
+<div class='sku col-xs-12 row'>
+  <div class='sku__image col-xs-12 col-md-4'>
+    <%= image_tag sku.image %>
+  </div>
+  <div class='sku__details col-xs-12 col-md-8'>
+    <h3 class='sku__title'>
+      <%= sku.title %>
+    </h3>
+    <div class='sku__description'>
+      <%= sku.description %>
+    </div>
+    <div class='sku__price'>
+      <%= sku.price %>
+    </div>
+    <a class='sku__buy' href='javascript:void(0)'>Buy</a>
+  </div>
+</div>
